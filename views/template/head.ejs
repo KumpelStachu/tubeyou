@@ -1,0 +1,17 @@
+<div class="navbar">
+    <div>
+        <button class="nav-button" style="opacity: 0;"><%- include('../icons/burger') %></button>
+        <a href="/" class="logo"><%- include('../icons/logo') %></a>
+    </div>
+        <form action="/" method="get" id="search-form" autocomplete="off">
+            <input type="hidden" autocomplete="false">
+            <input type="search" name="search" id="search" placeholder="Szukaj">
+            <input type="submit" value="Szukaj" id="search-button">
+        </form>
+    <div class="nav-button-container" style="opacity: 0;">
+        <button class="nav-button"><%- include('../icons/video-new') %></button>
+        <button class="nav-button"><%- include('../icons/apps') %></button>
+        <button class="nav-button"><%- include('../icons/notifications') %></button>
+        <button class="nav-button nav-account"><img src="https://picsum.photos/32"></img></button>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+<div class="columns">
+    <div class="grow"></div>
+    <div class="primary">
+        <iframe width="783" height="440" src="https://www.youtube-nocookie.com/embed/<%- video.id %>?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <div style="width: 783px; height: 440px; background-color: white;"></div> -->
+        <div class="container">
+            <div class="title">
+                <%- video.title %>
+            </div>
+            <div class="info">
+                <span>
+                    <%- video.viewCount %>
+                    <span class="dot">•</span>
+                    <%- video.date %>
+                </span>
+                <div class="grow"></div>
+                <div class="ldis">
+                    <span class="likes">
+                        <button class="like"><%- include('../icons/like') %> </button>
+                        <%- video.likes %>
+                    </span>
+                    <span class="dislikes">
+                        <button class="dislike"><%- include('../icons/dislike') %> </button>
+                        <%- video.dislikes %>
+                    </span>
+                </div>
+                <div class="share">
+                    <span class="shareb">
+                        <button class="dislike"><%- include('../icons/share') %> </button>
+                    </span>
+                    UDOSTĘPNIJ
+                </div>
+                <div class="save">
+                    <span class="saveb">
+                        <button class="dislike"><%- include('../icons/save') %> </button>
+                    </span>
+                    ZAPISZ
+                </div>
+            </div>
+        </div>
+        <div class="meta">
+            <div class="author">
+                <div class="author-info">
+                    <img src="https://picsum.photos/48" class="author-img">
+                    <span>
+                        <div class="name"><%- video.channel.name %></div>
+                        <div class="subscriptions"><%- video.channel.subscribers %></div>
+                    </span>
+                    <div class="grow"></div>
+                    <button class="subscribe">SUBSKRYBUJ</button>
+                </div>
+            </div>
+            <div class="description">
+                <%- video.description.replace(/\n/g, '<br>').replace(/[^ \n]*\.{3}/g, '&lt;tu był link&gt;') %>
+            </div>
+        </div>
+    </div>
+    <div class="secondary">
+        <% watchNext.forEach(next => { %>
+            <div class="next">
+                <a href="/watch?v=<%- next.id %>"><img src="<%- next.thumbnail %> "><span class="next-len"><%- next.length %> </span></a>
+                <div class="next-info">
+                    <div class="next-title"><a href="/watch?v=<%- next.id %>"><%- next.title %></a></div>
+                    <div class="next-mini"><%- next.author %> </div>
+                    <div class="next-mini">
+                        <%- next.views %>
+                        <span class="dot">•</span>
+                        <%- next.uploaded %>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+    <div class="grow"></div>
+</div>

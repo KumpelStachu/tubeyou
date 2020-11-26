@@ -1,0 +1,32 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "google-auth-library": "^6.1.2",
+    "googleapis": "^61.0.0",
+    "jsdom": "^16.4.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "puppeteer": "^5.4.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "request-promise-native": "^1.0.9"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "connect-browser-sync": "^2.1.0"
+  }
+}

@@ -1,0 +1,272 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+html,
+body {
+    background-color: #181818;
+    min-height: 110vh;
+    font-size: 0.7rem;
+}
+
+.navbar {
+    top: 0;
+    position: fixed;
+    background-color: #212121fb;
+    padding: 0 16px;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.logo svg {
+    margin-left: 4px;
+    height: 24px;
+    width: 80px;
+}
+
+#search-form {
+    display: flex;
+    flex-grow: 1;
+    max-width: 640px;
+    height: 30px;
+}
+
+#search {
+    background-color: #121212;
+    border: 1px solid #303030;
+    padding: 2px 6px;
+    font-size: 16px;
+    outline: none;
+    height: 30px;
+    flex-grow: 1;
+    border-radius: 1px 0 0 1px;
+    color: white;
+}
+
+#search-button {
+    background-color: #303030;
+    border-radius: 0 2px 2px 0;
+    font-weight: 600;
+    color: #9A9A9A;
+    border: none;
+    height: 30px;
+    width: 65px;
+}
+
+#search-button:hover {
+    cursor: pointer;
+    color: #BBB;
+}
+
+.nav-button-container {
+    display: flex;
+    vertical-align: middle;
+    align-content: center;
+    height: 40px;
+}
+
+.nav-button {
+    border-radius: 50%;
+    margin-right: 8px;
+    background: none;
+    padding: 8px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.nav-account {
+    padding: 0;
+}
+
+.nav-account img {
+    background-color: #9A9A9A;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.columns {
+    display: flex;
+
+    /* max-width: 100%; */
+}
+
+.primary {
+    width: 807px;
+    color: #FFFFFF;
+    margin-left: 24px;
+    padding: 24px 24px 0 0;
+}
+
+.secondary {
+    padding: 24px 24px 0 0;
+    width: 402px;
+}
+
+@media (max-width: 831px) {}
+
+.title {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.info {
+    display: flex;
+    vertical-align: middle;
+    height: 40px;
+    color: #AAA;
+    font-size: 1.4rem;
+}
+
+.meta {
+    border-bottom: 1px solid #303030;
+    border-top: 1px solid #303030;
+    padding: 16px 0;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.author-img {
+    border-radius: 50%;
+    margin: 1px 16px 1px 0;
+}
+
+.author-info .name {
+    font-size: 1.3rem;
+}
+
+.author-info .subscriptions {
+    color: #AAA;
+    font-size: 1.2rem;
+}
+
+button.subscribe {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #CC0000;
+    outline: none;
+    border: 0px solid black;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.grow {
+    flex: 1;
+}
+
+.description {
+    max-width: 615px;
+    padding-left: 64px;
+    font-size: 1.4rem;
+}
+
+.ldis,
+.dislikes,
+.likes {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dislikes,
+.likes,
+.share,
+.save {
+    padding: 4px;
+    margin: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+}
+
+.like,
+.dislike,
+.shareb,
+.saveb {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    padding: 2px;
+    fill: #AAA;
+    display: inline;
+}
+
+.like:hover,
+.dislike:hover,
+.shareb:hover,
+.saveb:hover {
+    background-color: #CCCCCC66;
+    border-radius: 50%;
+}
+
+.next {
+    width: 402px;
+    height: 96px;
+    margin: 8px;
+    display: flex;
+}
+
+.next a:first-of-type {
+    position: relative;
+}
+
+.next-len {
+    position: absolute;
+    color: white;
+    background-color: #000000aa;
+    right: 6px;
+    bottom: 6px;
+    z-index: 66;
+    font-size: 1.1rem;
+    padding: 2px;
+}
+
+.next-title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    max-lines: 2;
+    padding: 8px 0 6px 4px;
+}
+
+.next-mini {
+    padding: 0 0 2px 4px;
+    font-size: 1.1rem;
+    color: #AAA;
+}
+
+.next a {
+    color: white;
+    text-decoration: none;
+}
